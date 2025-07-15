@@ -10,9 +10,10 @@ function generatorFormInput(event)
         if (name === "") name = "Yoshikage Kira";
 
         let age = formData.get('age');
+        if (age === "") age = "33";
 
         let address = formData.get('address').trim(); 
-        if (address === "") name = "in the northeast section of Morioh";
+        if (address === "") address = "in the northeast section of Morioh";
         
         let isMarried = formData.get('is-married?').trim();
 
