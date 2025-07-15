@@ -13,13 +13,13 @@ function generatorFormInput(event)
         if (age === "") age = "33";
 
         let address = formData.get('address').trim(); 
-        if (address === "") address = "in the northeast section of Morioh";
+        if (address === "") address = "the northeast section of Morioh";
         
         let isMarried = formData.get('is-married?').trim();
 
         resultParagraph.textContent = 
            `“My name is ${name}. I\'m ${age} years old.
-            My house is ${address}, where all the villas are, and I am ${isMarried}.
+            My house is in ${address}, where all the villas are, and I am ${isMarried}.
             I work as an employee for the Kame Yu department stores, and I get home every day by 8 PM at the latest.
             I don\'t smoke, but I occasionally drink.
             I\'m in bed by 11 PM, and make sure I get eight hours of sleep, no matter what.
