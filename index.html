@@ -11,6 +11,9 @@
     <section>
       <h1>Yoshikage Kira's introduction monologue generator</h1>
       <p>This is a fan-made project. All characters and images belong to Hirohiko Araki and Shueisha. Used under fair use for non-commercial educational purposes.</p>
+      <fieldset>
+        <legend>What does it do?</legend>
+      </fieldset>
       <figure>
         <img src="./image/Yoshikage_Kira_FullBody_Posing_with_Stand.png" width="300" height="400" />
         <figcaption>Yoshikage Kira</figcaption>
@@ -29,7 +32,6 @@
     <section id="the-generator">
       <h2>The Quiet Life Generator:</h2>
       <form id="generator-form">
-      <!--Random nếu không điền => tạo random list-->
         <div class="generator-box">
             <label for="name">Name:</label>
             <input 
@@ -49,19 +51,17 @@
             max="100"
             />
           <br>
-            <label for="place">Place your house is in:</label>
+            <label for="house">Your house is in:</label>
             <input 
-            id="place" 
-            name="place" 
+            id="house" 
+            name="house" 
             type="text" 
-            placeholder="the northeast section of Morioh"
+            placeholder="e.g. the northeast section of Morioh"
             max="200"
             size="50"
             />
           <br>
-          <br>
-          <fieldset>
-            <legend>Is married?</legend>
+            <label>Are you married?&nbsp;</label>
             <label for="yes-married">Yes</label>
             <input 
             id="yes-married" 
@@ -77,7 +77,16 @@
             value="not married"
             checked
             />
-          </fieldset>
+        <br>
+            <label for="workplace">Workplace:</label>
+            <input 
+            id="workplace" 
+            name="workplace" 
+            type="text" 
+            placeholder="e.g. the Kame Yu department stores"
+            max="200"
+            size="50"
+            />
         <br>
             <label for="randomifblank"
             title="Randomly generate missing information from the random list">Random if blank</label>
@@ -99,10 +108,11 @@
             type="checkbox"
             title="Randomly generate everything from the random list"
             />
-            <small>(Randomly generate everything from the random list) (coming soon)</small>
+            <small>(Randomly generate everything from the random list)</small>
         <br>
         <br>
           <button type="submit">Generate</button>
+          <button type="reset">Clear all</button>
         </div>
       </form>
     </section>
@@ -130,7 +140,6 @@
         That is how I deal with society, and I know that is what brings me happiness.
         Although, if I were to fight, I wouldn&apos;t lose to anyone.&rdquo;
       </p>
-      <!--Sẽ làm nút so sánh, đối chiếu-->
     </section>
   </main>
   <hr>
