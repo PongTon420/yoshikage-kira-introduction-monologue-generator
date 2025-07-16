@@ -83,15 +83,7 @@
 
 
     "Kirito",
-    "Asuna",
-    "Alice Zuberg",
-    "Eugeo",
-    "Sinon",
-    "Leafa",
-    "Silica",
-    "Klein",
-    "Heathcliff",
-    "Yui"
+    "Asuna"
 ],
     "age": [
     "1", "2", "3", "4", "5", "6", "7", "8", "9", "10",
@@ -110,27 +102,33 @@
     "Okinawa", "Seoul", "Cairo", "Rome", "Athens",
     "Kyoto", "Osaka", "Hanoi", "Ho Chi Minh City", "Berlin",
     "Moscow", "Bangkok", "Manila", "Lagos", "Toronto",
-    "Sydney", "Melbourne", "Auckland", "Santiago", "Buenos Aires",
-    "Jakarta", "Nairobi", "Cape Town", "Reykjavik", "Lisbon",
-    "Madrid", "Dublin", "Prague", "Vienna", "Budapest",
-    "Warsaw", "Zurich", "Dubai", "Abu Dhabi", "Doha",
+    "Sydney", "Melbourne", "Auckland",
+    "Madrid", "Dublin", "Budapest",
+    "Dubai", "Abu Dhabi",
     "Singapore", "Hong Kong", "Macau", "Taipei", "Beijing",
     "Shanghai", "Chengdu", "Xian", "Karachi", "Delhi",
-    "Mumbai", "Bangalore", "Kathmandu", "Helsinki", "Stockholm",
-    "Oslo", "Copenhagen", "Brussels", "Geneva", "Edinburgh",
+    "Mumbai", "Stockholm",
+    "Copenhagen", "Edinburgh",
     "Fuyuki", "Chaldea", "Camelot", "Babylonia",
     "Orleans", "Shimosa", "Atlantis", "Olympus",
-    "Anastasia", "SIN", "Avalon",
-    "Snowfield", "Tokyo Tower", "Gensokyo", "Konoha",
-    "Hidden Leaf Village", "Asgard", "Midgard", "Helheim",
-    "Mount Olympus", "Valhalla", "Uruk",
-    "Rlyeh", "Hogwarts", "Diagon Alley", "Hyrule", "Kakariko Village",
-    "Clock Tower", "London Underground", "Akihabara",
-    "Ikebukuro", "Shinjuku", "Shibuya", "Ueno", "Meiji Shrine",
-    "Mt Fuji", "Lake Biwa", "Nagoya", "Sendai", "Fuyuki", "Gotham City", "Metropolis", "Isekai",
+    "Anastasia", "Avalon",
+    "Tokyo Tower", "Gensokyo", "Konoha",
+    "Asgard", "Midgard", "Helheim",
+    "Valhalla", "Uruk",
+    "Hogwarts", "Diagon Alley",
+    "Akihabara",
+    "Ikebukuro", "Shinjuku", "Shibuya", "Ueno",
+    "Nagoya", "Sendai", "Fuyuki", "Gotham City", "Metropolis", "Isekai",
     "Vũng Tàu", "The City", "Vũ Hán", "Fuuto City", "La La Land", "The Tezuka Zone", "Seliana", "Birmingham",
     "Westalis", "Ostania", "Ancient Rome"
 ],
 
-    "isMarried" : ["not married", "married"]
+    "isMarried" : ["not married", "married"],
+    "workplace": [
+
+],
+    "timeGetHome": [
+    "1 AM", "2 AM", "3 AM", "4 AM", "5 AM", "6 AM", "7 AM", "8 AM", "9 AM", "10 AM", "11 AM", "12 AM",
+    "1 PM", "2 PM", "3 PM", "4 PM", "5 PM", "6 PM", "7 PM", "8 PM", "9 PM", "10 PM", "11 PM", "12 PM"
+]
 }

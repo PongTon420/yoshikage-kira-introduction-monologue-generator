@@ -8,14 +8,16 @@ const formFields =
     age: generatorForm.elements['age'],
     house: generatorForm.elements['house'],
     isMarried: generatorForm.elements['is-married'],
+    workplace: generatorForm.elements['workplace'],
+    timeGetHome: generatorForm.elements['timeGetHome']
 }
 
-function paragraphResultChange(paragraph, name, age, house, isMarried)
+function paragraphResultChange(paragraph, name, age, house, isMarried, workplace, timeGetHome)
 {
     paragraph.textContent = 
            `“My name is ${name}. I\'m ${age} years old.
             My house is in ${house}, where all the villas are, and I am ${isMarried}.
-            I work as an employee for the Kame Yu department stores, and I get home every day by 8 PM at the latest.
+            I work as an employee for ${workplace}, and I get home every day by ${timeGetHome} at the latest.
             I don\'t smoke, but I occasionally drink.
             I\'m in bed by 11 PM, and make sure I get eight hours of sleep, no matter what.
             After having a glass of warm milk and doing about twenty minutes of stretches before going to bed,
@@ -28,7 +30,7 @@ function paragraphResultChange(paragraph, name, age, house, isMarried)
             Although, if I were to fight, I wouldn\'t lose to anyone.”`;
 }
 
-const allInputsExceptRandomEverything = generatorForm.querySelectorAll("input:not(#random-everything)")
+const allInputsExceptRandomEverything = generatorForm.querySelectorAll("input:not(#random-everything), select") //thêm disable ở đây
 function disableAllInputs(InputsArray, disabled)
 {
     InputsArray.forEach(function(input)
@@ -74,13 +76,17 @@ function generatorFormInput(event)
             formFields.age.value = getRandomFromArray(randomList.age);
             formFields.house.value = getRandomFromArray(randomList.house);
             formFields.isMarried.value = getRandomFromArray(randomList.isMarried);
+            formFields.workplace.value = getRandomFromArray(randomList.workplace);
+            formFields.timeGetHome.value = getRandomFromArray(randomList.timeGetHome);
 
             let name = formFields.name.value.trim();
             let age = formFields.age.value.trim();
             let house = formFields.house.value.trim();
             let isMarried = formFields.isMarried.value.trim();
+            let workplace = formFields.workplace.value.trim();
+            let timeGetHome = formFields.timeGetHome.value.trim();
             
-            paragraphResultChange(resultParagraph, name, age, house, isMarried);
+            paragraphResultChange(resultParagraph, name, age, house, isMarried, workplace, timeGetHome);
             
             });
         }
@@ -90,8 +96,10 @@ function generatorFormInput(event)
             let age = formFields.age.value.trim() || "33";
             let house = formFields.house.value.trim() || "the northeast section of Morioh";
             let isMarried = formFields.isMarried.value.trim();
+            let workplace = formFields.workplace.value.trim() || "the Kame Yu department stores";
+            let timeGetHome = formFields.timeGetHome.value.trim();
 
-            paragraphResultChange(resultParagraph, name, age, house, isMarried);
+            paragraphResultChange(resultParagraph, name, age, house, isMarried, workplace, timeGetHome);
         }
     };
 
@@ -103,6 +111,7 @@ generatorForm.addEventListener('reset', function (event)
             {
                 randomEverythingChecked.dispatchEvent(new Event('change'));
             }, 0);
+        
     }
 );
 
