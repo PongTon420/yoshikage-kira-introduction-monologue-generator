@@ -5,35 +5,36 @@
     <meta name="description" content="Yoshikage Kira's introduction monologue generator">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiet Life Generator</title>
+    <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
   <header>
     <section>
       <h1>Yoshikage Kira's introduction monologue generator</h1>
       <p>This is a fan-made project. All characters and images belong to Hirohiko Araki and Shueisha. Used under fair use for non-commercial educational purposes.</p>
-      <fieldset>
+      <fieldset id="headerFieldset">
         <legend>What does it do?</legend>
         <p>This website will generate Yoshikage Kira's introduction monologue from JoJo's Bizarre Adventure Part 4 using your input.</p>
       </fieldset>
-      <figure>
-        <img src="./image/Yoshikage_Kira_FullBody_Posing_with_Stand.png" width="300" height="400" />
-        <figcaption>Yoshikage Kira</figcaption>
-      </figure>
     </section>
-    <nav>
-      <ul>
-        <li><a href="#the-generator">The Quiet Life Generator</a></li>
-        <li><a href="#the-orignal-monologue">The original monologue</a></li>
-        <!--RandomList-->
-      </ul>
-    </nav>
   </header>
-  <hr>
   <main>
-    <section id="the-generator">
+    <div class="figure-row">  
+      <figure>
+        <img class="yoshikagekiraimg" src="./image/Yoshikage_Kira_FullBody_Posing_with_Stand.png" width="300" height="400" />
+      </figure>
+      <figure>
+        <img class="yoshikagekiraimg" src="./image/Yoshikage_Kira_FullBody_Posing_with_Stand.png" width="300" height="400" />
+      </figure>
+      <figure>
+        <img class="yoshikagekiraimg" src="./image/Yoshikage_Kira_FullBody_Posing_with_Stand.png" width="300" height="400" />
+      </figure>
+    </div>
+
+    <section>
       <h2>The Quiet Life Generator:</h2>
-      <form id="generator-form">
-        <div class="generator-box">
+      <div class="generator-box">
+        <form id="generator-form">
             <label for="name">Name:</label>
             <input 
             id="name" 
@@ -78,7 +79,7 @@
             value="not married"
             checked
             />
-        <br>
+          <br>
             <label for="workplace">Workplace:</label>
             <input 
             id="workplace" 
@@ -88,15 +89,13 @@
             max="200"
             size="50"
             />
-        <br>
-        <label for="timeGetHome">What time do you get home?:</label>
-            <select id="timeGetHome" name="timeGetHome">
-            </select>
-        <br>
-        <label for="timeToSleep">What time do you sleep?:</label>
-            <select id="timeToSleep" name="timeToSleep">
-            </select>
-        <br>
+          <br>
+          <label for="timeGetHome">What time do you get home?:</label>
+          <select id="timeGetHome" name="timeGetHome"></select>
+          <br>
+          <label for="timeToSleep">What time do you sleep?:</label>
+          <select id="timeToSleep" name="timeToSleep"></select>
+          <br>
             <label for="randomifblank"
             title="Randomly generate missing information from the random list">Random if blank</label>
             <input
@@ -107,7 +106,7 @@
             title="Randomly generate missing information from the random list"
             />
             <small>(Randomly generate missing information from the random list) (coming soon)</small>
-        <br>
+          <br>
             <label for="random-everything"
             title="Randomly generate everything from the random list">Random everything</label>
             <input
@@ -118,43 +117,49 @@
             title="Randomly generate everything from the random list"
             />
             <small>(Randomly generate everything from the random list)</small>
-        <br>
-        <br>
-          <button type="submit">Generate</button>
-          <button type="reset">Clear all</button>
-        </div>
-      </form>
+          <br>
+          <br>
+          <div class="button-div">
+            <button type="submit">Generate</button>
+            <button type="reset">Clear all</button>
+          </div>
+        </form>
+      </div>
     </section>
-    <br>    
-    <section id="result-section">
-      <fieldset>
-        <legend>Result</legend>
-        <p id="result-paragraph"><i>*Result will generate here</i></p>
+
+    <section>
+      <fieldset class="paragraphFieldset">
+        <legend class="paragraphLegend">Result</legend>
+        <p id="result-paragraph"><i>*Result will generate here.</i></p>
       </fieldset>
     </section>
-    <section id="the-original-monologue">
-      <h2>The original monologue:</h2>
-      <p>
-        &ldquo;My name is Yoshikage Kira. I&apos;m 33 years old.
-        My house is in the northeast section of Morioh, where all the villas are, and I am not married.
-        I work as an employee for the Kame Yu department stores, and I get home every day by 8 PM at the latest.
-        I don&apos;t smoke, but I occasionally drink.
-        I&apos;m in bed by 11 PM, and make sure I get eight hours of sleep, no matter what.
-        After having a glass of warm milk and doing about twenty minutes of stretches before going to bed,
-        I usually have no problems sleeping until morning.
-        Just like a baby, I wake up without any fatigue or stress in the morning.
-        I was told there were no issues at my last check-up.
-        I&apos;m trying to explain that I&apos;m a person who wishes to live a very quiet life.
-        I take care not to trouble myself with any enemies, like winning and losing, that would cause me to lose sleep at night.
-        That is how I deal with society, and I know that is what brings me happiness.
-        Although, if I were to fight, I wouldn&apos;t lose to anyone.&rdquo;
-      </p>
+
+    <section>
+      <fieldset class="paragraphFieldset">
+        <legend class="paragraphLegend">The original monologue</legend>
+        <p>
+          &ldquo;My name is Yoshikage Kira. I&apos;m 33 years old.
+          My house is in the northeast section of Morioh, where all the villas are, and I am not married.
+          I work as an employee for the Kame Yu department stores, and I get home every day by 8 PM at the latest.
+          I don&apos;t smoke, but I occasionally drink.
+          I&apos;m in bed by 11 PM, and make sure I get eight hours of sleep, no matter what.
+          After having a glass of warm milk and doing about twenty minutes of stretches before going to bed,
+          I usually have no problems sleeping until morning.
+          Just like a baby, I wake up without any fatigue or stress in the morning.
+          I was told there were no issues at my last check-up.
+          I&apos;m trying to explain that I&apos;m a person who wishes to live a very quiet life.
+          I take care not to trouble myself with any enemies, like winning and losing, that would cause me to lose sleep at night.
+          That is how I deal with society, and I know that is what brings me happiness.
+          Although, if I were to fight, I wouldn&apos;t lose to anyone.&rdquo;
+        </p>
+      </fieldset>
     </section>
   </main>
+  <br>
   <hr>
   <footer>
-    <p>© 2025 Quiet Life Generator. All rights reserved.</p>
-    <p>This is a fan-made project. JoJo's Bizarre Adventure is copyrighted by Hirohiko Araki and Shueisha.</p>
+    <small>© 2025 Quiet Life Generator. All rights reserved.</small> <br>
+    <small>This is a fan-made project. JoJo's Bizarre Adventure is copyrighted by Hirohiko Araki and Shueisha.</small>
   </footer>
   <script src="utilities.js"></script>
   <script src="script.js"></script>

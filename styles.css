@@ -1,0 +1,90 @@
+h1
+{
+    text-align: center;
+}
+
+h1+p
+{
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.generator-box
+{
+    max-width: 400px;
+    margin: auto;
+    margin-bottom: 25px;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+#headerFieldset
+{
+    width: 975px;
+    border: 1px solid black;
+    padding: 1rem;
+    margin: auto;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+#headerFieldset>legend
+{
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
+
+#headerFieldset>legend+p
+{
+    text-align: center;
+}
+
+.paragraphFieldset
+{
+    width: 900px;
+    border: 1px solid black;
+    padding: 1rem;
+    margin: 1rem auto;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: justify;
+}
+
+.paragraphLegend 
+{
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
+
+.figure-row 
+{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.yoshikagekiraimg
+{
+    width: 130px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.button-div
+{
+    display: flex;
+    justify-content: center;
+}
+
+footer
+{
+    text-align: center;
+}
