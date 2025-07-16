@@ -9,17 +9,19 @@ const formFields =
     house: generatorForm.elements['house'],
     isMarried: generatorForm.elements['is-married'],
     workplace: generatorForm.elements['workplace'],
-    timeGetHome: generatorForm.elements['timeGetHome']
+    timeGetHome: generatorForm.elements['timeGetHome'],
+    timeToSleep: generatorForm.elements['timeToSleep']
 }
 
-function paragraphResultChange(paragraph, name, age, house, isMarried, workplace, timeGetHome)
+function paragraphResultChange(paragraph, name, age, house, isMarried, workplace,
+    timeGetHome, timeToSleep)
 {
     paragraph.textContent = 
            `“My name is ${name}. I\'m ${age} years old.
             My house is in ${house}, where all the villas are, and I am ${isMarried}.
             I work as an employee for ${workplace}, and I get home every day by ${timeGetHome} at the latest.
             I don\'t smoke, but I occasionally drink.
-            I\'m in bed by 11 PM, and make sure I get eight hours of sleep, no matter what.
+            I\'m in bed by ${timeToSleep}, and make sure I get eight hours of sleep, no matter what.
             After having a glass of warm milk and doing about twenty minutes of stretches before going to bed,
             I usually have no problems sleeping until morning.
             Just like a baby, I wake up without any fatigue or stress in the morning.
@@ -78,6 +80,7 @@ function generatorFormInput(event)
             formFields.isMarried.value = getRandomFromArray(randomList.isMarried);
             formFields.workplace.value = getRandomFromArray(randomList.workplace);
             formFields.timeGetHome.value = getRandomFromArray(randomList.timeGetHome);
+            formFields.timeToSleep.value = getRandomFromArray(randomList.timeGetHome);
 
             let name = formFields.name.value.trim();
             let age = formFields.age.value.trim();
@@ -85,8 +88,10 @@ function generatorFormInput(event)
             let isMarried = formFields.isMarried.value.trim();
             let workplace = formFields.workplace.value.trim();
             let timeGetHome = formFields.timeGetHome.value.trim();
+            let timeToSleep = formFields.timeToSleep.value.trim();
             
-            paragraphResultChange(resultParagraph, name, age, house, isMarried, workplace, timeGetHome);
+            paragraphResultChange(resultParagraph, name, age, house, isMarried, workplace,
+                 timeGetHome, timeToSleep);
             
             });
         }
@@ -98,8 +103,10 @@ function generatorFormInput(event)
             let isMarried = formFields.isMarried.value.trim();
             let workplace = formFields.workplace.value.trim() || "the Kame Yu department stores";
             let timeGetHome = formFields.timeGetHome.value.trim();
+            let timeToSleep = formFields.timeGetHome.value.trim();
 
-            paragraphResultChange(resultParagraph, name, age, house, isMarried, workplace, timeGetHome);
+            paragraphResultChange(resultParagraph, name, age, house, isMarried, workplace,
+                 timeGetHome, timeToSleep);
         }
     };
 
