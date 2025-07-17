@@ -25,7 +25,6 @@
     "Charles Leclerc",
     "Phạm Gia An",
     "Ronald Koeman",
-    "John F. Kennedy",
     "Silvio Caruso",
     "Diana Burnwood",
     "Ken Watanabe",
@@ -125,11 +124,31 @@
 
     "isMarried" : ["not married", "married"],
     "workplace": [
-    
+    "Scudetto Ferrari",
+    "Viêm Dương Organization",
+    "Mr. Popo",
+    "Đại học Bách Khoa",
+    "UIT",
+    "Điện Máy Xanh",
+    "Bún bò Út Thoong",
+    "Chaldea Security Organization",
+    "Survey Corps Headquarters",
+    "Speedwagon Foundation",
+    "DIO's Mansion",
+    "Kame Yu Department Stores",
+    "Café Leblanc",
+    "Fuyuki City Hospital",
+    "Akihabara Electronics Mall",
+    "The Clock Tower",
+    "Châu Lộc Lê Studio",
+    "Hà Minh Tân Entertainment",
+    "Nhà hát của những giấc mơ",
+    "Etihad Football Club",
+    "Chinh phục ước mơ Anh Quốc",
+    "Hội ae đi chụp hình mấy người ỉa bậy"
 ],
     "timeGetHome": [
     "1 AM", "2 AM", "3 AM", "4 AM", "5 AM", "6 AM", "7 AM", "8 AM", "9 AM", "10 AM", "11 AM", "12 AM",
     "1 PM", "2 PM", "3 PM", "4 PM", "5 PM", "6 PM", "7 PM", "8 PM", "9 PM", "10 PM", "11 PM", "12 PM"
 ]
-    
 }
