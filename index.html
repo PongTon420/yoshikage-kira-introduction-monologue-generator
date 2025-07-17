@@ -43,6 +43,7 @@
             placeholder="e.g. Yoshikage Kira"
             max="100"
             />
+          <br>
             <label for="age">Age:</label>
             <input 
             id="age" 
@@ -64,14 +65,14 @@
             />
           <br>
             <label>Are you married?:&nbsp;</label>
-            <label for="yes-married">Yes</label>
+            <label id="radio-yes" class="inline-block-label" for="yes-married">Yes</label>
             <input 
             id="yes-married" 
             name="is-married" 
             type="radio"
             value="married"
             />
-            <label for="no-married">No</label>
+            <label id="radio-no" class="inline-block-label" for="no-married">No</label>
             <input 
             id="no-married" 
             name="is-married" 
@@ -90,13 +91,43 @@
             size="50"
             />
           <br>
-          <label for="timeGetHome">What time do you get home?:</label>
-          <select id="timeGetHome" name="timeGetHome"></select>
+            <label class="inline-block-label-alt" for="timeGetHome">What time do you get home?:</label>
+            <select id="timeGetHome" name="timeGetHome"></select>
           <br>
-          <label for="timeToSleep">What time do you sleep?:</label>
-          <select id="timeToSleep" name="timeToSleep"></select>
+            <label class="inline-block-label-alt" for="timeToSleep">What time do you sleep?:</label>
+            <select id="timeToSleep" name="timeToSleep"></select>
           <br>
-            <label for="randomifblank"
+            <label for="not-do">Enter something you don&apos;t do:</label>
+              <input 
+              id="not-do" 
+              name="not-do" 
+              type="text" 
+              placeholder="e.g. smoke"
+              max="200"
+              size="50"
+              />
+          <br>
+            <label for="do">Enter something you occasionally do:</label>
+              <input 
+              id="do" 
+              name="do" 
+              type="text" 
+              placeholder="e.g. drink"
+              max="200"
+              size="50"
+              />
+          <br>
+            <label for="wish">What do you wish for?:</label>
+              <input 
+              id="wish" 
+              name="wish" 
+              type="text" 
+              placeholder="e.g. to live a very quiet life"
+              max="200"
+              size="50"
+              />
+          <br>
+            <label class="inline-block-label-alt" for="randomifblank"
             title="Generate values randomly from a set list to fill in the blanks">Random if blank:</label>
             <input
             id="randomifblank"
@@ -107,7 +138,7 @@
             />
             <small>(Generate values randomly from a set list to fill in the blanks)</small>
           <br>
-            <label for="random-everything"
+            <label class="inline-block-label-alt" for="random-everything"
             title="Generate all fields randomly from a set list.">Random everything:</label>
             <input
             id="random-everything"

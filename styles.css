@@ -14,9 +14,40 @@ h2 {
 
 input
 {
-    border-color: black;
+    border-color: #bdbdbd;
     border-radius: 100px;
     border-width: 2px;
+}
+
+label
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.inline-block-label
+{
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.inline-block-label-alt
+{
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#radio-yes
+{
+    color: green;
+}
+
+#radio-no
+{
+    color: red;
 }
 
 button
@@ -32,6 +63,7 @@ button
 
 .generator-box
 {
+    font-family: "Lucida Console", monospace;
     background-color: #f9f9f9;
     max-width: 400px;
     margin: auto;
