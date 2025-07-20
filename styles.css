@@ -32,12 +32,14 @@ input
     border-color: #bdbdbd;
     border-radius: 100px;
     border-width: 2px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    padding-left: 13px;
 }
 
 #age
 {
-    text-align: center;
-    width: 85px;
+    width: 52px;
 }
 
 label
@@ -100,18 +102,22 @@ label
     color: red;
     margin-left: -10px;
     margin-right: -20px;
+    text-align: center;
 }
 
 #timeGetHome
 {
-    width: 70px;
+    width: 79px;
     margin-left: 0px;
+    font-size: 18px;
+    text-align: center;
 }
 
 #timeToSleep
 {
-    width: 70px;
+    width: 79px;
     margin-left: 0px;
+    font-size: 18px;
 }
 
 .pNormal
@@ -143,6 +149,7 @@ button
     max-width: 600px;
     margin: auto;
     padding: 30px;
+    padding-top: 45px;
     border: 1px solid black;
     border-radius: 8px;
 }
@@ -210,9 +217,10 @@ legend
 
 .yoshikagekiraimg
 {
-    width: 130px;
+    width: 400px;
     height: auto;
-    margin-top: 10px;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 .button-div
