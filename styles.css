@@ -14,9 +14,15 @@ h2 {
 
 input
 {
+    width: 300px;
     border-color: #bdbdbd;
     border-radius: 100px;
     border-width: 2px;
+}
+
+#age
+{
+    width: 100px;
 }
 
 label
@@ -40,14 +46,53 @@ label
     margin-bottom: 10px;
 }
 
+#randomifblank
+{
+    width: 100px;
+    margin-left: -50px;
+    margin-right: -50px;
+}
+
+#random-everything
+{
+    width: 100px;
+    margin-left: -50px;
+    margin-right: -50px;
+}
+
+#yes-married
+{
+    width: 50px;
+}
+
+#no-married
+{
+    width: 50px;
+}
+
 #radio-yes
 {
     color: green;
+    margin-right: -20px;
 }
 
 #radio-no
 {
     color: red;
+    margin-left: -10px;
+    margin-right: -20px;
+}
+
+#timeGetHome
+{
+    width: 70px;
+    margin-left: 0px;
+}
+
+#timeToSleep
+{
+    width: 70px;
+    margin-left: 0px;
 }
 
 button
