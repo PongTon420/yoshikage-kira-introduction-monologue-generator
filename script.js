@@ -10,27 +10,30 @@ const formFields =
     isMarried: generatorForm.elements['is-married'],
     workplace: generatorForm.elements['workplace'],
     timeGetHome: generatorForm.elements['timeGetHome'],
-    timeToSleep: generatorForm.elements['timeToSleep']
+    timeToSleep: generatorForm.elements['timeToSleep'],
+    notDo: generatorForm.elements['not-do'],
+    Do: generatorForm.elements['do'],
+    wish: generatorForm.elements['wish']
 }
 
 function paragraphResultChange(paragraph, name, age, house, isMarried, workplace,
-    timeGetHome, timeToSleep)
+    timeGetHome, timeToSleep, notDo, Do, wish)
 {
     paragraph.textContent = 
            `“My name is ${name}. I\'m ${age} years old.
             My house is in ${house}, where all the villas are, and I am ${isMarried}.
             I work as an employee for ${workplace}, and I get home every day by ${timeGetHome} at the latest.
-            I don\'t smoke, but I occasionally drink.
+            I don\'t ${notDo}, but I occasionally ${Do}.
             I\'m in bed by ${timeToSleep}, and make sure I get eight hours of sleep, no matter what.
             After having a glass of warm milk and doing about twenty minutes of stretches before going to bed,
             I usually have no problems sleeping until morning.
             Just like a baby, I wake up without any fatigue or stress in the morning.
             I was told there were no issues at my last check-up.
-            I\'m trying to explain that I\'m a person who wishes to live a very quiet life.
+            I\'m trying to explain that I\'m a person who wishes ${wish}.
             I take care not to trouble myself with any enemies, like winning and losing, that would cause me to lose sleep at night.
             That is how I deal with society, and I know that is what brings me happiness.
             Although, if I were to fight, I wouldn\'t lose to anyone.”`;
-}
+};
 
 function paraReset(paragraph)
 {
@@ -44,7 +47,7 @@ function disableAllInputs(InputsArray, disabled)
     {
         input.disabled = disabled;
     })
-}
+};
 
 function getRandomFromArray(array) 
 {
@@ -52,7 +55,7 @@ function getRandomFromArray(array)
   //Math.floor -> round down (2.9->2)
   //Math.random() -> random between 0-1 (e.g. 0.22, 0.99)
   //* arry.length -> random between 0-array.length (e.g. 4 items = 0-1-2-3 get rounded down)
-}
+};
 
 const randomEverythingChecked = document.getElementById('random-everything');
 const randomIfBlank = document.getElementById('randomifblank');
@@ -86,6 +89,9 @@ function generatorFormInput(event)
             let rWorkplace = getRandomFromArray(randomList.workplace);
             let rTimeGetHome = getRandomFromArray(randomList.timeGetHome);
             let rTimeToSleep = getRandomFromArray(randomList.timeGetHome);
+            let rNotDo = getRandomFromArray(randomList.notDo);
+            let rDo = getRandomFromArray(randomList.Do);
+            let rWish = getRandomFromArray(randomList.wish);
 
             let name = formFields.name.value.trim() || "Yoshikage Kira";
             let age = formFields.age.value.trim() || "33";
@@ -94,19 +100,14 @@ function generatorFormInput(event)
             let workplace = formFields.workplace.value.trim() || "the Kame Yu department stores";
             let timeGetHome = formFields.timeGetHome.value.trim();
             let timeToSleep = formFields.timeToSleep.value.trim();
+            let notDo = formFields.notDo.value.trim() || "smoke";
+            let Do = formFields.Do.value.trim() || "drink";
+            let wish = formFields.wish.value.trim() || "to live a very quiet life";
 
             if (randomEverythingChecked.checked)
-            {   
-                name = rName;
-                age = rAge;
-                house = rHouse;
-                isMarried = rIsMarried;
-                workplace = rWorkplace;
-                timeGetHome = rTimeGetHome;
-                timeToSleep = rTimeToSleep;
-                    
-                paragraphResultChange(resultParagraph, name, age, house, isMarried, workplace,
-                        timeGetHome, timeToSleep);
+            {                       
+                paragraphResultChange(resultParagraph, rName, rAge, rHouse, rIsMarried, rWorkplace,
+                        rTimeGetHome, rTimeToSleep, rNotDo, rDo, rWish);
             }
             else if (randomIfBlank.checked)
             {
@@ -117,18 +118,22 @@ function generatorFormInput(event)
                 workplace = formFields.workplace.value.trim() || rWorkplace;
                 timeGetHome = timeGetHome;
                 timeToSleep = timeToSleep;
-
+                notDo = formFields.notDo.value.trim() || rNotDo;
+                Do = formFields.Do.value.trim() || rDo;
+                wish = formFields.wish.value.trim() || rWish;
+ 
                 paragraphResultChange(resultParagraph, name, age, house, isMarried, workplace,
-                        timeGetHome, timeToSleep);
+                        timeGetHome, timeToSleep, notDo, Do, wish);
             }
 
             else
             {
                 paragraphResultChange(resultParagraph, name, age, house, isMarried, workplace,
-                        timeGetHome, timeToSleep);
+                        timeGetHome, timeToSleep, notDo, Do, wish);
             }
         });
-}
+};
+
 //Event 'change' when 'reset'
 generatorForm.addEventListener('reset', function (event) 
     {

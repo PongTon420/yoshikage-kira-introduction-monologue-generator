@@ -22,7 +22,7 @@ input
 
 #age
 {
-    width: 100px;
+    width: 70px;
 }
 
 label
@@ -49,15 +49,15 @@ label
 #randomifblank
 {
     width: 100px;
-    margin-left: -50px;
-    margin-right: -50px;
+    margin-left: -40px;
+    margin-right: -40px;
 }
 
 #random-everything
 {
     width: 100px;
-    margin-left: -50px;
-    margin-right: -50px;
+    margin-left: -40px;
+    margin-right: -40px;
 }
 
 #yes-married
@@ -138,6 +138,11 @@ button
 #headerFieldset>legend+p
 {
     text-align: center;
+}
+
+legend
+{
+    font-size: 30px;
 }
 
 .paragraphFieldset
