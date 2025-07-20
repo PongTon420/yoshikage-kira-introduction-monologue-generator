@@ -1,5 +1,8 @@
 h1
 {
+    font-size: 50px;
+    color: purple;
+    -webkit-text-stroke: 1px black;
     text-align: center;
 }
 
@@ -9,12 +12,23 @@ h1+p
 }
 
 h2 {
+    font-size: 40px;
     text-align: center;
+    color: darkorchid;
+    -webkit-text-stroke: 1px black;
+}
+
+#disclaimer
+{
+    font-size: 17px;
+    margin-top: -25px;
 }
 
 input
 {
-    width: 300px;
+    font-size: 20px;
+    width: 570px;
+    height: 25px;
     border-color: #bdbdbd;
     border-radius: 100px;
     border-width: 2px;
@@ -22,11 +36,12 @@ input
 
 #age
 {
-    width: 70px;
+    text-align: center;
+    width: 85px;
 }
 
 label
-{
+{   
     margin-top: 5px;
     margin-bottom: 5px;
     display: block;
@@ -51,6 +66,7 @@ label
     width: 100px;
     margin-left: -40px;
     margin-right: -40px;
+    height: 17px;
 }
 
 #random-everything
@@ -58,16 +74,19 @@ label
     width: 100px;
     margin-left: -40px;
     margin-right: -40px;
+    height: 17px;
 }
 
 #yes-married
 {
     width: 50px;
+    height: 17px;
 }
 
 #no-married
 {
     width: 50px;
+    height: 17px;
 }
 
 #radio-yes
@@ -95,12 +114,21 @@ label
     margin-left: 0px;
 }
 
+.pNormal
+{
+    font-size: 19px;
+    margin-top: 0;
+}
+
 button
 {
+    font-size: 20px;
     margin: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
     background-color: wheat ;
     width: 100px;
-    height: 30px;
+    height: 50px;
     border-color: saddlebrown;
     border-width: 1px;
     border-radius: 8px;
@@ -108,18 +136,20 @@ button
 
 .generator-box
 {
+    text-align: justify;
+    font-size: 20px;
     font-family: "Lucida Console", monospace;
     background-color: #f9f9f9;
-    max-width: 400px;
+    max-width: 600px;
     margin: auto;
-    padding: 1rem;
+    padding: 30px;
     border: 1px solid black;
     border-radius: 8px;
 }
 
 #headerFieldset
 {
-    width: 975px;
+    width: 1160px;
     border: 1px solid black;
     padding: 1rem;
     margin: auto;
@@ -145,11 +175,18 @@ legend
     font-size: 30px;
 }
 
+.paraResult
+{
+    font-size: 21px;
+}
+
 .paragraphFieldset
 {
-    width: 900px;
+    width: 960px;
     border: 1px solid black;
     padding: 1rem;
+    padding-left: 25px;
+    padding-right: 25px;
     margin: 32px auto;
     border-radius: 8px;
     background-color: #f9f9f9;

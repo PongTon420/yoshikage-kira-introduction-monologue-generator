@@ -3,7 +3,6 @@
     "Sung Jin-Woo",
     "Barack Obama",
     "Bob the Builder",
-    "Kim Jong",
     "Abraham Lin",
     "Lê Công Vinh",
     "Didier Drogba",
@@ -30,6 +29,8 @@
     "Ken Watanabe",
     "Takasugi Shinsaku",
     "John Apple",
+    "Phan Hùng Lĩnh",
+    "Phan Hùng Lĩnh Đẹp Trai",
     
 
     "Oberon",
@@ -77,7 +78,6 @@
     "Erwin Smith",
     "Reiner Braun",
     "Zeke Yeager",
-    "Jean Kirstein",
     "Hange Zoe",
     "Annie Leonhart",
 
@@ -98,31 +98,31 @@
     "91", "92", "93", "94", "95", "96", "97", "98", "99", "100"
 ],
     "house": [
-    "Rach Gia City", "Tokyo", "London", "New York", "Paris",
+    "Rach Gia City", "Tokyo", "London", "New York", "Paris", "Gò Quao",
     "Okinawa", "Seoul", "Cairo", "Rome", "Athens",
     "Kyoto", "Osaka", "Hanoi", "Ho Chi Minh City", "Berlin",
-    "Moscow", "Bangkok", "Manila", "Lagos", "Toronto",
+    "Moscow", "Bangkok", "Lagos", "Toronto",
     "Sydney", "Melbourne", "Auckland",
-    "Madrid", "Dublin", "Budapest",
+    "Madrid", "Budapest",
     "Dubai", "Abu Dhabi",
     "Singapore", "Hong Kong", "Macau", "Taipei", "Beijing",
     "Shanghai", "Chengdu", "Xian", "Karachi", "Delhi",
-    "Mumbai", "Stockholm",
-    "Copenhagen", "Edinburgh",
+    "Stockholm", "Copenhagen", "Edinburgh",
     "Fuyuki", "Chaldea", "Camelot", "Babylonia",
     "Orleans", "Shimosa", "Atlantis", "Olympus",
     "Anastasia", "Avalon",
     "Tokyo Tower", "Gensokyo", "Konoha",
-    "Asgard", "Midgard", "Helheim",
-    "Valhalla", "Uruk", "Hogwarts", "Diagon Alley",
+    "Asgard", "Helheim",
+    "Valhalla", "Uruk", "Hogwarts",
     "Akihabara", "Ikebukuro", "Shinjuku", "Shibuya", "Ueno",
-    "Nagoya", "Sendai", "Fuyuki", "Gotham City", "Metropolis", "Isekai",
+    "Nagoya", "Sendai", "Gotham City", "Metropolis", "Isekai",
     "Vũng Tàu", "The City", "Vũ Hán", "Fuuto City", "La La Land", 
     "The Tezuka Zone", "Seliana", "Birmingham",
     "Westalis", "Ostania", "Ancient Rome", "in the northeast section of Morioh"
 ],
 
     "isMarried" : ["not married", "married"],
+
     "workplace": [
     "Scudetto Ferrari",
     "Viêm Dương Organization",
@@ -158,6 +158,6 @@
 
 ],
     "wish" : [
-
+    "to phá hủy An Giang"
 ]
 }
