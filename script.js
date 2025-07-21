@@ -1,5 +1,8 @@
 const generatorForm = document.getElementById('generator-form');
+const generateButton = document.getElementById('generateButton');
+const translateButton = document.getElementById('translateButton');
 const resultParagraph = document.getElementById('result-paragraph');
+
 
 //Remember to add new input to formFields
 const formFields =
@@ -41,7 +44,7 @@ function paraReset(paragraph)
     paragraph.innerHTML = "<i>*Result will generate here.</i>";
 };
 
-const allInputsExceptRandomEverything = generatorForm.querySelectorAll("input:not(#random-everything), select") //thêm disable ở đây
+const allInputsExceptRandomEverything = generatorForm.querySelectorAll("input:not(#random-everything), select"); //thêm disable ở đây
 function disableAllInputs(InputsArray, disabled)
 {
     InputsArray.forEach(function(input)
@@ -71,10 +74,9 @@ randomEverythingChecked.addEventListener("change", function()
     }
 );
 
-function generatorFormInput(event)
+function generatorFormInput()
 {
-    event.preventDefault(); //ngăn reload page
-    console.log('Submit button was pressed');
+    console.log('Generate button was pressed');
     //load xong file json trước
     let randomList = {}
         fetch("randomList.json")
@@ -126,14 +128,14 @@ function generatorFormInput(event)
                 Do = formFields.Do.value.trim() || rDo;
                 wish = formFields.wish.value.trim() || rWish;
  
-                paragraphResultChange(resultParagraph, rName, rAge, rHouse, rIsMarried, rWorktitle, rWorkplace,
-                        rTimeGetHome, rTimeToSleep, rNotDo, rDo, rWish);
+                paragraphResultChange(resultParagraph, name, age, house, isMarried, worktitle, workplace,
+                        timeGetHome, timeToSleep, notDo, Do, wish);
             }
 
             else
             {
-                paragraphResultChange(resultParagraph, rName, rAge, rHouse, rIsMarried, rWorktitle, rWorkplace,
-                        rTimeGetHome, rTimeToSleep, rNotDo, rDo, rWish);
+                paragraphResultChange(resultParagraph, name, age, house, isMarried, worktitle, workplace,
+                        timeGetHome, timeToSleep, notDo, Do, wish);
             }
         });
 };
@@ -151,4 +153,37 @@ generatorForm.addEventListener('reset', function (event)
     }
 );
 
-generatorForm.addEventListener('submit', generatorFormInput);
+function translateVN(paragraph)
+{
+    let name = formFields.name.value.trim() || "Yoshikage Kira";
+    let age = formFields.age.value.trim() || "33";
+    let house = formFields.house.value.trim() || "the northeast section of Morioh";
+    let isMarried = formFields.isMarried.value.trim();
+    let worktitle = formFields.worktitle.value.trim() || "an employee";
+    let workplace = formFields.workplace.value.trim() || "the Kame Yu department stores";
+    let timeGetHome = formFields.timeGetHome.value.trim();
+    let timeToSleep = formFields.timeToSleep.value.trim();
+    let notDo = formFields.notDo.value.trim() || "smoke";
+    let Do = formFields.Do.value.trim() || "drink";
+    let wish = formFields.wish.value.trim() || "to live a very quiet life";
+
+    if (isMarried === "not married"){ isMarried = "chưa kết hôn"} 
+    else { isMarried = "đã kết hôn"};
+    paragraph.textContent = 
+           `“Tôi tên là ${name}. Tôi ${age} tuổi.
+            Nhà tôi ở ${house}, nơi có nhiều biệt thự, và tôi chưa kết hôn.
+            Tôi làm nhân viên tại cửa hàng bách hóa Kame Yu, và tôi luôn về đến nhà trước 8 giờ tối.
+            Tôi không hút thuốc, nhưng thỉnh thoảng có uống rượu.
+            Tôi đi ngủ lúc 11 giờ tối và luôn đảm bảo ngủ đủ tám tiếng mỗi đêm, bất kể chuyện gì.
+            Trước khi ngủ, tôi uống một ly sữa ấm và tập giãn cơ khoảng 20 phút,
+            nên tôi thường không gặp vấn đề gì khi ngủ thẳng tới sáng.
+            Giống như một đứa trẻ, tôi thức dậy mà không cảm thấy mệt mỏi hay căng thẳng.
+            Bác sĩ bảo rằng lần kiểm tra sức khỏe gần nhất của tôi không có gì bất thường.
+            Tôi muốn nói rằng tôi là người chỉ mong có một cuộc sống yên bình.
+            Tôi tránh xa mọi rắc rối, những thứ như thắng thua hay kẻ thù, vì chúng sẽ làm tôi mất ngủ.
+            Đó là cách tôi sống giữa xã hội, và tôi biết chính điều đó đem lại hạnh phúc cho tôi.
+            Tuy nhiên, nếu phải chiến đấu, tôi sẽ không thua bất kỳ ai.”`;
+}
+
+generateButton.addEventListener('click', generatorFormInput);
+translateButton.addEventListener('click', () => {translateVN(resultParagraph)}); 
