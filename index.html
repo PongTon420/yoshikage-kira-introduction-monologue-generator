@@ -7,8 +7,10 @@
     <title>Kira's Curriculum Vitae Generator</title>
     <link rel="icon" type="image/png" href="./image/favicon.png">
     <link rel="stylesheet" href="styles.css"/>
+    <script type="module" src="utilities.js"></script>
+    <script type="module" src="script.js"></script>
 </head>
-<body style="background-color: lightblue;">
+<body>
   <header>
     <section>
       <h1 class="display-inline">Yoshikage Kira's introduction monologue generator</h1>
@@ -20,18 +22,6 @@
     </section>
   </header>
   <main>
-    <div class="figure-row">  
-      <figure>
-        <img class="yoshikagekiraimg" src="./image/Yoshikage_Kira_FullBody_Posing_with_Stand.png" width="300" height="400" />
-      </figure>
-      <figure>
-        <img class="yoshikagekiraimg" src="./image/Yoshikage_Kira_FullBody_Posing_with_Stand.png" width="300" height="400" />
-      </figure>
-      <figure>
-        <img class="yoshikagekiraimg" src="./image/Yoshikage_Kira_FullBody_Posing_with_Stand.png" width="300" height="400" />
-      </figure>
-    </div>
-
     <section>
       <h2>Kira&apos;s Curriculum Vitae Generator</h2>
       <div class="generator-box">
@@ -80,6 +70,15 @@
             type="radio"
             value="not married"
             checked
+            />
+          <br>
+            <label for="worktitle">Your job title or position:</label>
+            <input 
+            id="worktitle" 
+            name="worktitle" 
+            type="text" 
+            placeholder="e.g. an employee"
+            max="200"
             />
           <br>
             <label for="workplace">Workplace:</label>
@@ -149,6 +148,7 @@
           <br>
           <div class="button-div">
             <button type="submit">Generate</button>
+            <button type="submit">Generate</button>
             <button type="reset">Clear all</button>
           </div>
         </form>
@@ -180,6 +180,10 @@
           That is how I deal with society, and I know that is what brings me happiness.
           Although, if I were to fight, I wouldn&apos;t lose to anyone.&rdquo;
         </p>
+        <hr>
+        <figure>
+          <img class="yoshikagekiraimg" src="./image/Yoshikage_Kira_FullBody_Posing_with_Stand.png"/>
+        </figure>
       </fieldset>
     </section>
   </main>
@@ -189,7 +193,5 @@
     <small>© 2025 Quiet Life Generator. All rights reserved.</small> <br>
     <small>This is a fan-made project. JoJo's Bizarre Adventure is copyrighted by Hirohiko Araki and Shueisha.</small>
   </footer>
-  <script src="utilities.js"></script>
-  <script src="script.js"></script>
 </body>
 </html>

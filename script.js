@@ -8,6 +8,7 @@ const formFields =
     age: generatorForm.elements['age'],
     house: generatorForm.elements['house'],
     isMarried: generatorForm.elements['is-married'],
+    worktitle: generatorForm.elements['worktitle'],
     workplace: generatorForm.elements['workplace'],
     timeGetHome: generatorForm.elements['timeGetHome'],
     timeToSleep: generatorForm.elements['timeToSleep'],
@@ -16,13 +17,13 @@ const formFields =
     wish: generatorForm.elements['wish']
 }
 
-function paragraphResultChange(paragraph, name, age, house, isMarried, workplace,
+function paragraphResultChange(paragraph, name, age, house, isMarried, worktitle, workplace,
     timeGetHome, timeToSleep, notDo, Do, wish)
 {
     paragraph.textContent = 
            `“My name is ${name}. I\'m ${age} years old.
             My house is in ${house}, where all the villas are, and I am ${isMarried}.
-            I work as an employee for ${workplace}, and I get home every day by ${timeGetHome} at the latest.
+            I work as ${worktitle} for ${workplace}, and I get home every day by ${timeGetHome} at the latest.
             I don\'t ${notDo}, but I occasionally ${Do}.
             I\'m in bed by ${timeToSleep}, and make sure I get eight hours of sleep, no matter what.
             After having a glass of warm milk and doing about twenty minutes of stretches before going to bed,
@@ -87,6 +88,7 @@ function generatorFormInput(event)
             let rHouse = getRandomFromArray(randomList.house);
             let rIsMarried = getRandomFromArray(randomList.isMarried);
             let rWorkplace = getRandomFromArray(randomList.workplace);
+            let rWorktitle = getRandomFromArray(randomList.worktitle);
             let rTimeGetHome = getRandomFromArray(randomList.timeGetHome);
             let rTimeToSleep = getRandomFromArray(randomList.timeGetHome);
             let rNotDo = getRandomFromArray(randomList.notDo);
@@ -97,6 +99,7 @@ function generatorFormInput(event)
             let age = formFields.age.value.trim() || "33";
             let house = formFields.house.value.trim() || "the northeast section of Morioh";
             let isMarried = formFields.isMarried.value.trim();
+            let worktitle = formFields.worktitle.value.trim() || "an employee";
             let workplace = formFields.workplace.value.trim() || "the Kame Yu department stores";
             let timeGetHome = formFields.timeGetHome.value.trim();
             let timeToSleep = formFields.timeToSleep.value.trim();
@@ -106,7 +109,7 @@ function generatorFormInput(event)
 
             if (randomEverythingChecked.checked)
             {                       
-                paragraphResultChange(resultParagraph, rName, rAge, rHouse, rIsMarried, rWorkplace,
+                paragraphResultChange(resultParagraph, rName, rAge, rHouse, rIsMarried, rWorktitle, rWorkplace,
                         rTimeGetHome, rTimeToSleep, rNotDo, rDo, rWish);
             }
             else if (randomIfBlank.checked)
@@ -116,20 +119,21 @@ function generatorFormInput(event)
                 house = formFields.house.value.trim() || rHouse;
                 isMarried = isMarried;
                 workplace = formFields.workplace.value.trim() || rWorkplace;
+                worktitle = formFields.worktitle.value.trim() || rWorktitle;
                 timeGetHome = timeGetHome;
                 timeToSleep = timeToSleep;
                 notDo = formFields.notDo.value.trim() || rNotDo;
                 Do = formFields.Do.value.trim() || rDo;
                 wish = formFields.wish.value.trim() || rWish;
  
-                paragraphResultChange(resultParagraph, name, age, house, isMarried, workplace,
-                        timeGetHome, timeToSleep, notDo, Do, wish);
+                paragraphResultChange(resultParagraph, rName, rAge, rHouse, rIsMarried, rWorktitle, rWorkplace,
+                        rTimeGetHome, rTimeToSleep, rNotDo, rDo, rWish);
             }
 
             else
             {
-                paragraphResultChange(resultParagraph, name, age, house, isMarried, workplace,
-                        timeGetHome, timeToSleep, notDo, Do, wish);
+                paragraphResultChange(resultParagraph, rName, rAge, rHouse, rIsMarried, rWorktitle, rWorkplace,
+                        rTimeGetHome, rTimeToSleep, rNotDo, rDo, rWish);
             }
         });
 };

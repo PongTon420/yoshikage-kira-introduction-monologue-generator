@@ -122,13 +122,20 @@
 ],
 
     "isMarried" : ["not married", "married"],
-
+    "worktitle": [
+    "a janitor", "a wizard", "a dog", "a project manager",
+    "thợ sửa xe", "ca sĩ", "người đóng quảng cáo Điện Máy Xanh",
+    "hoạ sĩ", "người dạy bơi", "an employee", "a Master", "tiến sĩ hạt nhân học",
+    "tiến sĩ hải dương học", "a Youtuber", "giáo sư Hogwarts", "con ma trong Hogwarts",
+    "Con tu tú", "Người bán kẹo kéo", "Người nhặt vợ", "Tài xế chạy Grab", "Con Chó", "a doctor",
+    "S-rank Hero", "No. 1 Hero"
+],
     "workplace": [
     "Scudetto Ferrari",
     "Viêm Dương Organization",
     "Mr. Popo",
     "Đại học Bách Khoa",
-    "UIT",
+    "UIT", "Tác phẩm Vợ Nhặt", "Tác phẩm Đoàn thuyền đánh cá",
     "Điện Máy Xanh",
     "Bún bò Út Thoong",
     "Chaldea Security Organization",
