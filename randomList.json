@@ -30,7 +30,7 @@
     "Takasugi Shinsaku",
     "John Apple",
     "Phan Hùng Lĩnh",
-    "Phan Hùng Lĩnh Đẹp Trai",
+    "Phan Hùng Lĩnh đẹp trai",
     
 
     "Oberon",
@@ -68,7 +68,6 @@
     "Guido Mista",
     "Noriaki Kakyoin",
     "Enrico Pucci",
-    "Yoshikage Kira",
 
 
     "Eren Yeager",
@@ -109,31 +108,30 @@
     "Shanghai", "Chengdu", "Xian", "Karachi", "Delhi",
     "Stockholm", "Copenhagen", "Edinburgh",
     "Fuyuki", "Chaldea", "Camelot", "Babylonia",
-    "Orleans", "Shimosa", "Atlantis", "Olympus",
-    "Anastasia", "Avalon",
+    "Orleans", "Shimosa", "Atlantis", "Olympus", "Avalon",
     "Tokyo Tower", "Gensokyo", "Konoha",
     "Asgard", "Helheim",
     "Valhalla", "Uruk", "Hogwarts",
     "Akihabara", "Ikebukuro", "Shinjuku", "Shibuya", "Ueno",
-    "Nagoya", "Sendai", "Gotham City", "Metropolis", "Isekai",
+    "Nagoya", "Sendai", "Gotham City", "Isekai",
     "Vũng Tàu", "The City", "Vũ Hán", "Fuuto City", "La La Land", 
     "The Tezuka Zone", "Seliana", "Birmingham",
-    "Westalis", "Ostania", "Ancient Rome", "in the northeast section of Morioh"
+    "Westalis", "Ostania", "Ancient Rome"
 ],
 
     "isMarried" : ["not married", "married"],
     "worktitle": [
     "a janitor", "a wizard", "a dog", "a project manager",
     "thợ sửa xe", "ca sĩ", "người đóng quảng cáo Điện Máy Xanh",
-    "hoạ sĩ", "người dạy bơi", "an employee", "a Master", "tiến sĩ hạt nhân học",
+    "hoạ sĩ", "người dạy bơi", "a Master", "tiến sĩ hạt nhân học",
     "tiến sĩ hải dương học", "a Youtuber", "giáo sư Hogwarts", "con ma trong Hogwarts",
-    "Con tu tú", "Người bán kẹo kéo", "Người nhặt vợ", "Tài xế chạy Grab", "Con Chó", "a doctor",
-    "S-rank Hero", "No. 1 Hero"
+    "con tu tú", "người bán kẹo kéo", "người nhặt vợ", "tài xế chạy Grab", "a doctor",
+    "S-rank Hero", "No. 1 Hero", "người đẹp"
 ],
     "workplace": [
     "Scudetto Ferrari",
     "Viêm Dương Organization",
-    "Mr. Popo",
+    "Mr. Popo's place",
     "Đại học Bách Khoa",
     "UIT", "Tác phẩm Vợ Nhặt", "Tác phẩm Đoàn thuyền đánh cá",
     "Điện Máy Xanh",
@@ -142,7 +140,6 @@
     "Survey Corps Headquarters",
     "Speedwagon Foundation",
     "DIO's Mansion",
-    "Kame Yu Department Stores",
     "Café Leblanc",
     "Fuyuki City Hospital",
     "Akihabara Electronics Mall",
