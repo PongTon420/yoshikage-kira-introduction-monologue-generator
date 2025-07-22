@@ -229,9 +229,21 @@ generatorForm.addEventListener('reset', function (event)
 function translateVN(paragraph, Name, age, house, isMarried, worktitle, workplace,
                 timeGetHome, timeToSleep, notDo, Do, wish)
 {
+    switch (Name) //done
+    {
+        case "Bob the Builder":
+            Name = "Bob thợ xây";
+            break;
+        case "Active Water Cooling":
+            Name = "Hệ thống tản nhiệt nước chủ động";
+            break;
+        case "Gilgamesh King of Heroes":
+            Name = "Gilgamesh – Vua của các Anh hùng";
+            break;
+    };
     if (isMarried === "not married"){ isMarried = "chưa kết hôn"} 
     else { isMarried = "đã kết hôn"};
-    switch(house)
+    switch(house) //done
     {
         case "the northeast section of Morioh":
             house = "khu đông bắc Morioh";
@@ -291,7 +303,7 @@ function translateVN(paragraph, Name, age, house, isMarried, worktitle, workplac
             house = "La Mã cổ đại";
             break;
     };
-    switch (worktitle)
+    switch (worktitle) //done
     {
         case "an employee":
             worktitle = "nhân viên";
@@ -324,12 +336,83 @@ function translateVN(paragraph, Name, age, house, isMarried, worktitle, workplac
             worktitle = "anh hùng hạng nhất";
             break;
     };
-    
+    switch (workplace) //done
+    {
+        case "the Kame Yu department stores":
+            workplace = "cửa hàng Kame Yu";
+            break;
+        case "Viêm Dương Organization":
+            workplace = "Tổ chức Viêm Dương";
+            break;
+        case "Mr. Popo's place":
+            workplace = "Chỗ ở của Mr. Popo";
+            break;
+        case "Chaldea Security Organization":
+            workplace = "Tổ chức An ninh Chaldea";
+            break;
+        case "Survey Corps Headquarters":
+            workplace = "Tổng bộ Binh đoàn Trinh Sát";
+            break;
+        case "DIO's Mansion":
+            workplace = "Dinh thự của DIO";
+            break;
+        case "Fuyuki City Hospital":
+            workplace = "Bệnh viện Thành phố Fuyuki";
+            break;
+        case "Akihabara Electronics Mall":
+            workplace = "Khu mua sắm điện tử Akihabara";
+            break;
+        case "The Clock Tower":
+            workplace = "Tháp Đồng Hồ";
+            break;
+        case "Etihad Football Club":
+            workplace = "Câu lạc bộ Bóng đá Etihad";
+            break;
+    };
+
+let [hour, period] = timeGetHome.split(" "); //split at space
+    hour = parseInt(hour);
+    switch (period)
+    {
+        case "AM":
+            if (hour == 11 || hour == 12)
+                timeGetHome = `${hour} giờ trưa`;
+            else
+                timeGetHome = `${hour} giờ sáng`;
+            break;
+        case "PM":
+            if (hour >= 1 && hour <= 5)
+                timeGetHome = `${hour} giờ chiều`;
+            else if (hour == 11 || hour == 12)
+                timeGetHome = `${hour} giờ trưa`;
+            else
+                timeGetHome = `${hour} giờ tối`;
+            break;
+    };
+
+    [hour, period] = timeToSleep.split(" ");
+    hour = parseInt(hour);
+    switch (period)
+    {
+        case "AM":
+            if (hour == 11 || hour == 12)
+                timeToSleep = `${hour} giờ trưa`;
+            else
+                timeToSleep = `${hour} giờ sáng`;
+            break;
+        case "PM":
+            if (hour >= 1 && hour <= 5)
+                timeToSleep = `${hour} giờ chiều`;
+            else
+                timeToSleep = `${hour} giờ tối`;
+            break;
+    };
+
     paragraph.textContent = 
            `“Tên tôi là ${Name}. Năm nay ${age} tuổi. Nhà của tôi nằm ở ${house}, 
             nơi toàn những biệt thự, và tôi chưa kết hôn. Tôi làm ${worktitle} cho ${workplace}
-            và luôn là người về nhà muộn nhất lúc 8 giờ. Tôi không hút thuốc, nhưng thỉnh thoảng có uống rượu. 
-            Tôi đi ngủ lúc 11 giờ tối, luôn đảm bảo ngủ đủ 8 tiếng, bất kì chuyện gì đi nữa. Sau khi uống một ly sữa ấm 
+            và luôn là người về nhà muộn nhất lúc ${timeGetHome}. Tôi không ${notDo}, nhưng thỉnh thoảng ${Do}. 
+            Tôi đi ngủ lúc ${timeToSleep}, luôn đảm bảo ngủ đủ 8 tiếng, bất kì chuyện gì đi nữa. Sau khi uống một ly sữa ấm 
             và tập thể dục nhẹ 20 phút trước khi lên giường, tôi sẽ ngủ ngon đến sáng mà không gặp vấn đề gì. 
             Như một đứa trẻ, tôi luôn thức dậy, đầy sảng khoái và không chút mỏi mệt. Lần khám bệnh cuối của 
             tôi cũng cho thấy tôi hoàn toàn khỏe mạnh.
@@ -340,7 +423,7 @@ function translateVN(paragraph, Name, age, house, isMarried, worktitle, workplac
 
             /*Tên tôi là Yoshikage Kira. Năm nay 33 tuổi. Nhà của tôi nằm ở khu Đông Bắc của Morioh, 
             nơi toàn những biệt thự, và tôi chưa kết hôn. Tôi làm nhân viên tại cửa hàng Kame Yu
-            và luôn là người về nhà muộn nhất lúc 8 giờ. Tôi không hút thuốc, nhưng thỉnh thoảng có uống rượu. 
+            và luôn là người về nhà muộn nhất lúc 8 giờ tối. Tôi không hút thuốc, nhưng thỉnh thoảng uống rượu. 
             Tôi đi ngủ lúc 11 giờ tối, luôn đảm bảo ngủ đủ 8 tiếng, bất kì chuyện gì đi nữa. Sau khi uống một ly sữa ấm 
             và tập thể dục nhẹ 20 phút trước khi lên giường, tôi sẽ ngủ ngon đến sáng mà không gặp vấn đề gì. 
             Như một đứa trẻ, tôi luôn thức dậy, đầy sảng khoái và không chút mỏi mệt. Lần khám bệnh cuối của 
