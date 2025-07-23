@@ -1,2 +1,2 @@
 # yoshikage-kira-introduction-monologue-generator
-This project website generates Yoshikage Kira's iconic introduction monologue from JoJo's Bizarre Adventure: Part 4 using your custom inputs—or you can randomize them for fun. <br>
+This website generates Yoshikage Kira's iconic introduction monologue from JoJo's Bizarre Adventure: Part 4 using your custom inputs—or you can randomize them for fun. <br>
