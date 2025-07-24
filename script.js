@@ -54,7 +54,7 @@ const formFields =
     notDo: generatorForm.elements['not-do'],
     Do: generatorForm.elements['do'],
     wish: generatorForm.elements['wish']
-}
+};
 
 function paragraphResultChange(paragraph, Name, age, house, isMarried, worktitle, workplace,
     timeGetHome, timeToSleep, notDo, Do, wish)
@@ -118,7 +118,7 @@ async function loadRandomList() {
     randomList = json;
 
     rName = getRandomFromArray(randomList.name);
-    rAge = getRandomFromArray(randomList.age);
+    rAge = Math.floor(Math.random() * 1000) + 1;
     rHouse = getRandomFromArray(randomList.house);
     rIsMarried = getRandomFromArray(randomList.isMarried);
     rWorkplace = getRandomFromArray(randomList.workplace);
@@ -140,7 +140,7 @@ async function loadRandomList() {
     notDo = formFields.notDo.value.trim() || "smoke";
     Do = formFields.Do.value.trim() || "drink";
     wish = formFields.wish.value.trim() || "to live a very quiet life";
-}
+};
 
 async function generateResultParagraph()
 {
@@ -370,8 +370,8 @@ function translateVN(paragraph, Name, age, house, isMarried, worktitle, workplac
             break;
     };
 
-let [hour, period] = timeGetHome.split(" "); //split at space
-    hour = parseInt(hour);
+    let [hour, period] = timeGetHome.split(" "); //split at space
+        hour = parseInt(hour);
     switch (period)
     {
         case "AM":
@@ -407,16 +407,139 @@ let [hour, period] = timeGetHome.split(" "); //split at space
                 timeToSleep = `${hour} giờ tối`;
             break;
     };
+    switch (notDo)
+    {
+        case "smoke":
+            notDo = "hút thuốc";
+            break;
+        case "drink":
+            notDo = "uống rượu";
+        case "eat rice":
+            notDo = "ăn cơm";
+            break;
+        case "drink bleach":
+            notDo = "uống nước tẩy";
+            break;
+        case "wash my hands after using the bathroom":
+            notDo = "rửa tay sau khi đi vệ sinh";
+            break;
+        case "do backflips":
+            notDo = "nhào lộn ngược";
+            break;
+        case "play League of Legends":
+            notDo = "chơi Liên Minh Huyền Thoại";
+            break;
+        case "do drugs":
+            notDo = "dính đến ma túy";
+            break;
+        case "use chopsticks to eat":
+            notDo = "dùng đũa để ăn";
+            break;
+        case "cook meth":
+            notDo = "nấu meth";
+            break;
+        case "eat pork":
+            notDo = "ăn thịt heo";
+            break;
+    };
+    switch (Do)
+    {
+        case "drink":
+            Do = "uống rượu";
+            break;
+        case "smoke":
+            Do = "hút thuốc";
+            break;
+        case "do meth":
+            Do = "dùng meth";
+            break;
+        case "play TFT":
+            Do = "chơi Đấu Trường Chân Lý";
+            break;
+        case "smoke weed":
+            Do = "hút cần";
+            break;
+        case "eat children":
+            Do = "ăn thịt trẻ em";
+            break;
+    };
+    switch (wish)
+    {
+        case "to live a very quiet life":
+            wish ="sống một cuộc đời bình yên phẳng lặng";
+            break;
+        case "to become the Pirate King":
+            wish = "trở thành Vua Hải Tặc";
+            break;
+        case "for a world without war":
+            wish = "một thế giới không có chiến tranh";
+            break;
+        case "someone would acknowledge my pain":
+            wish = "ai đó thấu hiểu nỗi đau của tôi";
+            break;
+        case "to protect my friends no matter what":
+            wish = "bảo vệ những người tôi yêu quý bằng mọi giá";
+            break;
+        case "that I could relive everything, but do it right":
+            wish = "sống lại tất cả, nhưng lần này làm đúng";
+            break;
+        case "I could erase all the mistakes I've made":
+            wish = "xóa bỏ mọi sai lầm mình đã gây ra";
+            break;
+        case "for a quiet life in Morioh":
+            wish = "một cuộc sống yên bình ở Morioh";
+            break;
+        case "that this endless cycle would finally break":
+            wish = "vòng lặp vô tận này kết thúc";
+            break;
+        case "I was strong enough to change fate":
+            wish = "đủ mạnh để thay đổi số phận";
+            break;
+        case "for everyone to smile without pretending":
+            wish = "mọi người có thể cười mà không phải giả vờ";
+            break;
+        case "that I never had this cursed power":
+            wish = "chưa từng sở hữu sức mạnh bị nguyền rủa này";
+            break;
+        case "the world would understand what justice really means":
+            wish = "thế giới hiểu được công lý thật sự là gì";
+            break;
+        case "to surpass all limits":
+            wish = "vượt qua mọi giới hạn của bản thân";
+            break;
+        case "to rewrite our story from the beginning":
+            wish = "viết lại câu chuyện của chúng tôi từ đầu";
+            break;
+        case "for a world where heroes aren't needed":
+            wish = "một thế giới nơi không cần đến anh hùng";
+            break;
+        case "I could stay by your side forever":
+            wish = "mãi mãi ở bên cạnh người đó";
+            break;
+        case "that I was born in a different world with magic":
+            wish = "được sinh ra trong một thế giới có phép thuật";
+            break;
+        case "I had the resolve to kill my past self":
+            wish = "đủ can đảm để giết chết con người trong quá khứ của mình";
+            break;
+        case "to stand proud, even if the world is against me":
+            wish = "đứng vững dù cả thế giới chống lại tôi";
+            break;
+        case "to live a very quiet life":
+            wish = "sống một cuộc đời bình yên phẳng lặng";
+            break;
+    };
+
 
     paragraph.textContent = 
            `“Tên tôi là ${Name}. Năm nay ${age} tuổi. Nhà của tôi nằm ở ${house}, 
             nơi toàn những biệt thự, và tôi chưa kết hôn. Tôi làm ${worktitle} cho ${workplace}
             và luôn là người về nhà muộn nhất lúc ${timeGetHome}. Tôi không ${notDo}, nhưng thỉnh thoảng ${Do}. 
-            Tôi đi ngủ lúc ${timeToSleep}, luôn đảm bảo ngủ đủ 8 tiếng, bất kì chuyện gì đi nữa. Sau khi uống một ly sữa ấm 
+            Tôi đi ngủ lúc ${timeToSleep}, luôn đảm bảo ngủ đủ 8 tiếng, dù bất kì chuyện gì đi nữa. Sau khi uống một ly sữa ấm 
             và tập thể dục nhẹ 20 phút trước khi lên giường, tôi sẽ ngủ ngon đến sáng mà không gặp vấn đề gì. 
             Như một đứa trẻ, tôi luôn thức dậy, đầy sảng khoái và không chút mỏi mệt. Lần khám bệnh cuối của 
             tôi cũng cho thấy tôi hoàn toàn khỏe mạnh.
-            Tôi đang cố giải thích rằng tôi là một kẻ chỉ muốn sống một cuộc đời bình yên phẳng lặng, 
+            Tôi đang cố giải thích rằng tôi là một kẻ chỉ muốn ${wish}, 
             không mảy may đến chuyện thắng thua với ai, đặc biệt khi nó làm tôi mất ngủ vào buổi đêm. 
             Đó là cách tôi đương đầu với cái xã hội này, và tôi biết điều đó làm tôi cảm thấy hạnh phúc hơn hết.
             Tuy nhiên, nếu phải chiến đấu với bất kỳ kẻ nào, tôi nhất định sẽ không thua!”`;
@@ -424,7 +547,7 @@ let [hour, period] = timeGetHome.split(" "); //split at space
             /*Tên tôi là Yoshikage Kira. Năm nay 33 tuổi. Nhà của tôi nằm ở khu Đông Bắc của Morioh, 
             nơi toàn những biệt thự, và tôi chưa kết hôn. Tôi làm nhân viên tại cửa hàng Kame Yu
             và luôn là người về nhà muộn nhất lúc 8 giờ tối. Tôi không hút thuốc, nhưng thỉnh thoảng uống rượu. 
-            Tôi đi ngủ lúc 11 giờ tối, luôn đảm bảo ngủ đủ 8 tiếng, bất kì chuyện gì đi nữa. Sau khi uống một ly sữa ấm 
+            Tôi đi ngủ lúc 11 giờ tối, luôn đảm bảo ngủ đủ 8 tiếng, dù bất kì chuyện gì đi nữa. Sau khi uống một ly sữa ấm 
             và tập thể dục nhẹ 20 phút trước khi lên giường, tôi sẽ ngủ ngon đến sáng mà không gặp vấn đề gì. 
             Như một đứa trẻ, tôi luôn thức dậy, đầy sảng khoái và không chút mỏi mệt. Lần khám bệnh cuối của 
             tôi cũng cho thấy tôi hoàn toàn khỏe mạnh.
@@ -432,7 +555,7 @@ let [hour, period] = timeGetHome.split(" "); //split at space
             không mảy may đến chuyện thắng thua với ai, đặc biệt khi nó làm tôi mất ngủ vào buổi đêm. 
             Đó là cách tôi đương đầu với cái xã hội này, và tôi biết điều đó làm tôi cảm thấy hạnh phúc hơn hết.
             Tuy nhiên, nếu phải chiến đấu với bất kỳ kẻ nào, tôi nhất định sẽ không thua! */
-}
+};
 
 generateButton.addEventListener('click', generateResultParagraph);
 translateButton.addEventListener('click', () => {translateVN(

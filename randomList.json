@@ -84,18 +84,6 @@
     "Kirito",
     "Asuna"
 ],
-    "age": [
-    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10",
-    "11", "12", "13", "14", "15", "16", "17", "18", "19", "20",
-    "21", "22", "23", "24", "25", "26", "27", "28", "29", "30",
-    "31", "32", "33", "34", "35", "36", "37", "38", "39", "40",
-    "41", "42", "43", "44", "45", "46", "47", "48", "49", "50",
-    "51", "52", "53", "54", "55", "56", "57", "58", "59", "60",
-    "61", "62", "63", "64", "65", "66", "67", "68", "69", "70",
-    "71", "72", "73", "74", "75", "76", "77", "78", "79", "80",
-    "81", "82", "83", "84", "85", "86", "87", "88", "89", "90",
-    "91", "92", "93", "94", "95", "96", "97", "98", "99", "100"
-],
     "house": [
     "Rach Gia City", "Tokyo", "London", "New York", "Paris", "Gò Quao",
     "Okinawa", "Seoul", "Cairo", "Rome", "Athens",
@@ -155,12 +143,35 @@
     "1 PM", "2 PM", "3 PM", "4 PM", "5 PM", "6 PM", "7 PM", "8 PM", "9 PM", "10 PM", "11 PM", "12 PM"
 ],
     "notDo" : [
-
+    "drink", "đánh bà già", "ỉa", "đi tiểu", "đánh rắm",
+    "quay gacha", "eat rice", "drink bleach", "wash my hands after using the bathroom",
+    "do backflips", "play League of Legends", "do drugs", "use chopsticks to eat", "cook meth", "giúp bà già qua đường",
+    "eat pork"
 ],
     "Do" : [
-
+    "smoke", "do meth", "xì hơi", "play TFT", "đánh ông già", "ăn thịt chó", "gãi đít", "tè dầm", "ỉa trong quần",
+    "smoke weed", "eat children"
 ],
     "wish" : [
-    "to phá hủy An Giang"
+    "to phá hủy An Giang",
+    "to become the Pirate King",
+    "for a world without war",
+    "someone would acknowledge my pain",
+    "to protect my friends no matter what",
+    "that I could relive everything, but do it right",
+    "I could erase all the mistakes I've made",
+    "for a quiet life in Morioh",
+    "that this endless cycle would finally break",
+    "I was strong enough to change fate",
+    "for everyone to smile without pretending",
+    "that I never had this cursed power",
+    "the world would understand what justice really means",
+    "to surpass all limits",
+    "to rewrite our story from the beginning",
+    "for a world where heroes aren't needed",
+    "I could stay by your side forever",
+    "that I was born in a different world with magic",
+    "I had the resolve to kill my past self",
+    "to stand proud, even if the world is against me"
 ]
 }

@@ -167,6 +167,8 @@ legend {
     margin: 2rem auto;
     border-radius: 8px;
     background-color: #f9f9f9;
+    text-align: left;
+    line-height: 1.15;  
 }
 
 .paragraphLegend {
