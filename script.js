@@ -131,6 +131,7 @@ async function loadRandomList() {
 
     Name = formFields.name.value.trim() || "Yoshikage Kira";
     age = formFields.age.value.trim() || "33";
+    if (age < 1) age = age * -1;
     house = formFields.house.value.trim() || "the northeast section of Morioh";
     isMarried = formFields.isMarried.value.trim();
     worktitle = formFields.worktitle.value.trim() || "an employee";
