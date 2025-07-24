@@ -487,9 +487,6 @@ function translateVN(paragraph, Name, age, house, isMarried, worktitle, workplac
         case "I could erase all the mistakes I've made":
             wish = "xóa bỏ mọi sai lầm mình đã gây ra";
             break;
-        case "for a quiet life in Morioh":
-            wish = "một cuộc sống yên bình ở Morioh";
-            break;
         case "that this endless cycle would finally break":
             wish = "vòng lặp vô tận này kết thúc";
             break;
@@ -508,14 +505,8 @@ function translateVN(paragraph, Name, age, house, isMarried, worktitle, workplac
         case "to surpass all limits":
             wish = "vượt qua mọi giới hạn của bản thân";
             break;
-        case "to rewrite our story from the beginning":
-            wish = "viết lại câu chuyện của chúng tôi từ đầu";
-            break;
         case "for a world where heroes aren't needed":
             wish = "một thế giới nơi không cần đến anh hùng";
-            break;
-        case "I could stay by your side forever":
-            wish = "mãi mãi ở bên cạnh người đó";
             break;
         case "that I was born in a different world with magic":
             wish = "được sinh ra trong một thế giới có phép thuật";
@@ -526,8 +517,8 @@ function translateVN(paragraph, Name, age, house, isMarried, worktitle, workplac
         case "to stand proud, even if the world is against me":
             wish = "đứng vững dù cả thế giới chống lại tôi";
             break;
-        case "to live a very quiet life":
-            wish = "sống một cuộc đời bình yên phẳng lặng";
+        case "to phá hủy An Giang":
+            wish = "phá hủy An Giang";
             break;
     };
 
