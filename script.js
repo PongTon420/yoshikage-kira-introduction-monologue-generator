@@ -118,7 +118,7 @@ async function loadRandomList() {
     randomList = json;
 
     rName = getRandomFromArray(randomList.name);
-    rAge = Math.floor(Math.random() * 1000) + 1;
+    rAge = Math.floor(Math.random() * 100) + 1;
     rHouse = getRandomFromArray(randomList.house);
     rIsMarried = getRandomFromArray(randomList.isMarried);
     rWorkplace = getRandomFromArray(randomList.workplace);
