@@ -436,9 +436,6 @@ function translateVN(paragraph, Name, age, house, isMarried, worktitle, workplac
         case "use chopsticks to eat":
             notDo = "dùng đũa để ăn";
             break;
-        case "cook meth":
-            notDo = "nấu meth";
-            break;
         case "eat pork":
             notDo = "ăn thịt heo";
             break;
@@ -450,9 +447,6 @@ function translateVN(paragraph, Name, age, house, isMarried, worktitle, workplac
             break;
         case "smoke":
             Do = "hút thuốc";
-            break;
-        case "do meth":
-            Do = "dùng meth";
             break;
         case "play TFT":
             Do = "chơi Đấu Trường Chân Lý";
@@ -468,6 +462,9 @@ function translateVN(paragraph, Name, age, house, isMarried, worktitle, workplac
     {
         case "to live a very quiet life":
             wish ="sống một cuộc đời bình yên phẳng lặng";
+            break;
+        case "to phá hủy An Giang":
+            wish = "phá hủy An Giang";
             break;
         case "to become the Pirate King":
             wish = "trở thành Vua Hải Tặc";
@@ -516,9 +513,6 @@ function translateVN(paragraph, Name, age, house, isMarried, worktitle, workplac
             break;
         case "to stand proud, even if the world is against me":
             wish = "đứng vững dù cả thế giới chống lại tôi";
-            break;
-        case "to phá hủy An Giang":
-            wish = "phá hủy An Giang";
             break;
     };
 
