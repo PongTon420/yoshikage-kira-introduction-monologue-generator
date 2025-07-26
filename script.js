@@ -472,48 +472,6 @@ function translateVN(paragraph, Name, age, house, isMarried, worktitle, workplac
         case "for a world without war":
             wish = "một thế giới không có chiến tranh";
             break;
-        case "someone would acknowledge my pain":
-            wish = "ai đó thấu hiểu nỗi đau của tôi";
-            break;
-        case "to protect my friends no matter what":
-            wish = "bảo vệ những người tôi yêu quý bằng mọi giá";
-            break;
-        case "that I could relive everything, but do it right":
-            wish = "sống lại tất cả, nhưng lần này làm đúng";
-            break;
-        case "I could erase all the mistakes I've made":
-            wish = "xóa bỏ mọi sai lầm mình đã gây ra";
-            break;
-        case "that this endless cycle would finally break":
-            wish = "vòng lặp vô tận này kết thúc";
-            break;
-        case "I was strong enough to change fate":
-            wish = "đủ mạnh để thay đổi số phận";
-            break;
-        case "for everyone to smile without pretending":
-            wish = "mọi người có thể cười mà không phải giả vờ";
-            break;
-        case "that I never had this cursed power":
-            wish = "chưa từng sở hữu sức mạnh bị nguyền rủa này";
-            break;
-        case "the world would understand what justice really means":
-            wish = "thế giới hiểu được công lý thật sự là gì";
-            break;
-        case "to surpass all limits":
-            wish = "vượt qua mọi giới hạn của bản thân";
-            break;
-        case "for a world where heroes aren't needed":
-            wish = "một thế giới nơi không cần đến anh hùng";
-            break;
-        case "that I was born in a different world with magic":
-            wish = "được sinh ra trong một thế giới có phép thuật";
-            break;
-        case "I had the resolve to kill my past self":
-            wish = "đủ can đảm để giết chết con người trong quá khứ của mình";
-            break;
-        case "to stand proud, even if the world is against me":
-            wish = "đứng vững dù cả thế giới chống lại tôi";
-            break;
     };
 
 
