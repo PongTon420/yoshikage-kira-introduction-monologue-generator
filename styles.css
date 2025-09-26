@@ -9,7 +9,6 @@ h1 {
     /* ~50px */
     color: purple;
     -webkit-text-stroke: 2px black;
-    text-align: center;
 }
 
 h1+p {
@@ -216,9 +215,29 @@ footer {
 }
 
 @media (max-width: 600px) {
+    h1{
+        width: 90%;
+        font-size: 1.9rem;
+        margin: auto;
+        margin-bottom: 2.5rem;
+    }
+    p
+    {
+        width: 90%;
+        font-size: 1rem;
+        margin: auto;
+        margin-bottom: 1rem;
+        align-self: center;
+    }
     #headerFieldset {
         width: 70%;
         padding: 1rem;
+    }
+    #headerFieldset>legend {
+        font-size: 1.5rem;
+    }
+    #headerFieldset>legend+p {
+        font-size: 0.875rem;
     }
     .paragraphFieldset {
         width: 70%;
@@ -228,10 +247,11 @@ footer {
         width: 70%;
         padding: 1rem;
         padding-top: 1.5rem;
-        font-size: 100%;
+        font-size: 90%;
     }
-
-
+    .paraResult {
+        font-size: 1rem;
+    }
     input {
         height: 100%;
         width: 90%;
@@ -246,6 +266,8 @@ footer {
         margin-right: 1rem;
     }
     footer {
+        width: 90%;
         font-size: 0.875rem;
+        margin: auto;
     }
 }
