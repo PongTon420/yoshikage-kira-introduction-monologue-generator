@@ -1,5 +1,7 @@
 body {
     background-color: lightblue;
+    margin: 0;
+    padding: 0%;
 }
 
 h1 {
@@ -145,8 +147,7 @@ button:hover {
 }
 
 #headerFieldset {
-    width: 95%;
-    max-width: 1050px;
+    width: 60%;
     border: 1px solid black;
     padding: 1rem 2rem;
     margin: auto;
@@ -212,4 +213,39 @@ legend {
 
 footer {
     text-align: center;
+}
+
+@media (max-width: 600px) {
+    #headerFieldset {
+        width: 70%;
+        padding: 1rem;
+    }
+    .paragraphFieldset {
+        width: 70%;
+        padding: 1rem;
+    }
+    .generator-box {
+        width: 70%;
+        padding: 1rem;
+        padding-top: 1.5rem;
+        font-size: 100%;
+    }
+
+
+    input {
+        height: 100%;
+        width: 90%;
+        font-size: 85%;
+    }
+    button {
+        width: 80px;
+        height: 40px;
+        font-size: 1rem;
+        margin: 0.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    footer {
+        font-size: 0.875rem;
+    }
 }
