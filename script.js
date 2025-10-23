@@ -415,6 +415,7 @@ function translateVN(paragraph, Name, age, house, isMarried, worktitle, workplac
             break;
         case "drink":
             notDo = "uống rượu";
+            break;
         case "eat rice":
             notDo = "ăn cơm";
             break;
