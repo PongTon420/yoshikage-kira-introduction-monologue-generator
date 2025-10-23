@@ -201,6 +201,10 @@ legend {
     line-height: 1.15;
 }
 
+.pNormal{
+    font-size: 1.55rem;
+}
+
 .paragraphLegend {
     font-weight: bold;
     margin: 0 auto;
